@@ -153,12 +153,15 @@ class WatchedMoviesList extends StatelessWidget {
                         title: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Icon(Icons.edit,
-                                color: Color.fromRGBO(211, 12, 27, 1)),
+                            Icon(
+                              Icons.edit,
+                              color: Color.fromRGBO(211, 12, 27, 1),
+                            ),
                             SizedBox(width: 10),
-                            Text('edit',
-                                style:
-                                    TextStyle(fontSize: 17, letterSpacing: 2))
+                            Text(
+                              'edit',
+                              style: TextStyle(fontSize: 17, letterSpacing: 2),
+                            )
                           ],
                         ),
                         onTap: () {
