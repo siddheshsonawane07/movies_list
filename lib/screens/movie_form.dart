@@ -241,7 +241,7 @@ class MovieForm extends StatelessWidget {
                         decoration: InputDecoration(
                           contentPadding: EdgeInsets.only(left: 25, right: 25),
                           fillColor: Color.fromRGBO(211, 12, 27, 1),
-                          labelText: "Author",
+                          labelText: "Director",
                           labelStyle: TextStyle(
                               fontSize: 16, fontWeight: FontWeight.bold),
                           errorText: snapshot.error,
@@ -268,7 +268,7 @@ class MovieForm extends StatelessWidget {
                         decoration: InputDecoration(
                           contentPadding: EdgeInsets.only(left: 25, right: 25),
                           fillColor: Color.fromRGBO(211, 12, 27, 1),
-                          labelText: "Yes",
+                          labelText: "Year",
                           labelStyle: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,

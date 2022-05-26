@@ -156,7 +156,7 @@ class WatchedMoviesList extends StatelessWidget {
                             Icon(Icons.edit,
                                 color: Color.fromRGBO(211, 12, 27, 1)),
                             SizedBox(width: 10),
-                            Text('To edit',
+                            Text('edit',
                                 style:
                                     TextStyle(fontSize: 17, letterSpacing: 2))
                           ],
