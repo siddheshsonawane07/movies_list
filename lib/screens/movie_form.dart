@@ -53,7 +53,7 @@ class MovieForm extends StatelessWidget {
                           Icon(Icons.photo_library,
                               color: Color.fromRGBO(211, 12, 27, 1)),
                           SizedBox(width: 10),
-                          Text('Galeria',
+                          Text('Gallery',
                               style: TextStyle(fontSize: 17, letterSpacing: 2))
                         ]),
                     onTap: () {
@@ -69,7 +69,7 @@ class MovieForm extends StatelessWidget {
                           Icon(Icons.photo_camera,
                               color: Color.fromRGBO(211, 12, 27, 1)),
                           SizedBox(width: 10),
-                          Text('Câmera',
+                          Text('Camera',
                               style: TextStyle(fontSize: 17, letterSpacing: 2))
                         ]),
                     onTap: () {
@@ -147,7 +147,7 @@ class MovieForm extends StatelessWidget {
                 if (snapshot.hasData) {
                   return Text(snapshot.data);
                 } else {
-                  return Text("Novo Filme");
+                  return Text("New Movie");
                 }
               }),
           centerTitle: true,
@@ -215,7 +215,7 @@ class MovieForm extends StatelessWidget {
                         decoration: InputDecoration(
                           contentPadding: EdgeInsets.only(left: 25, right: 25),
                           fillColor: Color.fromRGBO(211, 12, 27, 1),
-                          labelText: "Nome",
+                          labelText: "Name",
                           labelStyle: TextStyle(
                               fontSize: 16, fontWeight: FontWeight.bold),
                           errorText: snapshot.error,
@@ -298,26 +298,25 @@ class MovieForm extends StatelessWidget {
                 ),
               ),
               StreamBuilder(
-                  stream: movieFormBloc.movieStatus,
-                  builder:
-                      (BuildContext context, AsyncSnapshot<bool> snapshot) {
-                    return Padding(
-                      padding: EdgeInsets.only(left: 20, right: 20),
-                      child: Card(
-                        child: CheckboxListTile(
-                          activeColor: Color.fromRGBO(211, 12, 27, 1),
-                          value:
-                              snapshot.hasData && snapshot.data ? true : false,
-                          title: Text("Have you ever seen this movie ?"),
-                          subtitle:
-                              Text("confirm by checking the box on the side"),
-                          controlAffinity: ListTileControlAffinity.leading,
-                          onChanged: movieFormBloc.changeMovieStatus,
-                          //  <-- leading Checkbox
-                        ),
+                stream: movieFormBloc.movieStatus,
+                builder: (BuildContext context, AsyncSnapshot<bool> snapshot) {
+                  return Padding(
+                    padding: EdgeInsets.only(left: 20, right: 20),
+                    child: Card(
+                      child: CheckboxListTile(
+                        activeColor: Color.fromRGBO(211, 12, 27, 1),
+                        value: snapshot.hasData && snapshot.data ? true : false,
+                        title: Text("Have you ever seen this movie ?"),
+                        subtitle:
+                            Text("confirm by checking the box on the side"),
+                        controlAffinity: ListTileControlAffinity.leading,
+                        onChanged: movieFormBloc.changeMovieStatus,
+                        //  <-- leading Checkbox
                       ),
-                    );
-                  }),
+                    ),
+                  );
+                },
+              ),
             ],
           ),
         ),
