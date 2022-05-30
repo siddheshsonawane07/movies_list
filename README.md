@@ -1,16 +1,14 @@
-# movies_app
+# Movies App
 
-A new Flutter project.
+A flutter app developed for creating a list for ‘movies to watch’ , & a list 
+for ‘movies watched’. The user can save the name, director, year & 
+poster of the movie.
+Technologies used: Flutter, sqflite
 
-## Getting Started
+To run this app follow the instructions:
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1) Clone this repository or download the zip file.
+2) Run "flutter pub get" in terminal to install the the libraries required for the project to run. 
+3) Select any Android Emulator or a debug android device connected with wire with OTG settings "ON".
+4) After successfull connection with the device, press the F5 to initiate the app building process and wait for the APK file to be build and installed on your  device.
+5) If you want to run the app in a chrome browser, enter "flutter run -d chrome" command.
