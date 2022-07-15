@@ -14,4 +14,6 @@ To run this app follow the instructions:
 5) If you want to run the app in a chrome browser, enter "flutter run -d chrome" command.
 
 Video demonstrating the project
+
+
 https://user-images.githubusercontent.com/73132959/179282791-1f5804e5-e74e-4e11-9a44-bfd9d7962fe5.mp4
