@@ -16,4 +16,4 @@ To run this app follow the instructions:
 Video demonstrating the project
 <center>
 https://user-images.githubusercontent.com/73132959/179282791-1f5804e5-e74e-4e11-9a44-bfd9d7962fe5.mp4
-<center>
+</center>
